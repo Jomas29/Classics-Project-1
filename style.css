@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* body {
     margin: 0;
     height: auto;
@@ -164,7 +169,6 @@ nav ul li {
     border-right: 2px, solid, black;
     border-left: 2px, solid;
     color: red;
-
 }
 
 .menu_item a {
@@ -183,56 +187,154 @@ nav ul li {
     white-space: nowrap;
 }
 
-#products img {
+.each_product {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    object-position: center;
+    width: 33.33%;
 }
 
-/* @keyframes slide {
-    0% {
-        background-image: url(img/2014-Toyota-Camry.jpg);
-    }
+/* .each_product {
+    display: inline-block;
+    width: 100%;
+    margin: 1%;
+    padding: 30px;
+    object-position: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
 
-    20% {
-        background-image: url(img/2017-camry-300x175.jpg);
-    }
-
-    40% {
-        background-image: url(img/2017-camry-768x448.jpg);
-    }
-
-    50% {
-        background-image: url(img/2017-camry.jpg);
-    }
-
-    60% {
-        background-image: url(img/2019-Hilux-Bnr.jpg);
-    }
-
-    70% {
-        background-image: url(img/2019-Lexus-470-300x184.jpg);
-    }
-
-    80% {
-        background-image: url(img/2019-Lexus-470.jpg);
-    }
-
-    90% {
-        background-image: url(img/2019-Lexus-570-300x184.jpg);
-    }
-
-    100% {
-        background-image: url(img/2019-Lexus-570.jpg);
-    }
+.quote {
+    border: solid 2px black;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    object-position: center;
+    object-fit: cover;
+    width: fit-content;
 }
- */
 
+.quote a:hover {
+    color: black;
+}
 
+.quote a {
+    color: red;
+    text-decoration: none;
+}
 
-/* .scrolling_banner {
-
+.deals {
     display: flex;
-    flex-direction: row;
-    animation-direction: normal;
+    margin: 10px 40px;
+    gap: 10px;
+    padding: 10px;
+    object-fit: cover;
+    max-width: 33%;
+    justify-content: space-between;
+}
+
+.deals img {
+    width: 30vw;
+
+}
+
+.shop {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: rgb(38, 37, 37);
+    color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#appointment {
+    background-image: url(img/suv-lineup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.appointment-item {
+    background-color: white;
+    padding: 30px;
+    display: inline-block;
+    opacity: 0.9;
+    text-justify: auto;
+}
+
+.appointment-item:hover {
+    opacity: 1;
+}
+
+.appointment-container {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    margin: 30px;
+}
+
+.appointment-item a {
+    background-color: rgb(32, 24, 24);
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 3px;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.appointment-item a:hover {
+    background-color: red;
+}
+
+.appointment-item2 {
+    background-color: rgb(212, 106, 106);
+    padding: 30px;
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.appointment-item2:hover {
+    opacity: 1;
+}
+
+.appointment-item2 a {
+    background-color: rgb(32, 24, 24);
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 3px;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.appointment-item2 a:hover {
+    background-color: red;
+}
+
+#About-Us {
+    background-color: white;
+}
+
+/* .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    object-position: center;
+    width: 33.33%;
 } */
 
 .scrolling_banner {
@@ -241,12 +343,6 @@ nav ul li {
     transition: transform 0.5s ease;
     width: 100%;
 }
-
-/* .scrolling_banner img {
-    width: 100%;
-    animation: scroll 2s infinite;
-    object-fit: cover;
-} */
 
 .scrolling_banner img {
     width: 100%;
@@ -263,7 +359,7 @@ nav ul li {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 50px;
-    color: white;
+    color: rgb(231, 208, 208);
 }
 
 .scroll-left {

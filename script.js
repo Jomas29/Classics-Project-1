@@ -35,3 +35,22 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.scroll-left').addEventListener('click', scrollLeft);
   document.querySelector('.scroll-right').addEventListener('click', scrollRight);
 });
+
+const products = scrollingBanner.querySelectorAll('.each_product');
+  let currentIndex = 0;
+  let scrollInterval;
+
+  // function scrollRight() {
+  //   currentIndex++;
+  //   if (currentIndex >= products.length) {
+  //     currentIndex = 0;
+  //   }
+  //   scrollingBanner.style.transform = `translateX(${-currentIndex * 33.33}%)`;
+  // }
+
+  // function scrollLeft() {
+  //   currentIndex--;
+  //   if (currentIndex < 0) {
+  //     currentIndex = products.length - 1;
+  //   }
+    
